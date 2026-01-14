@@ -1,5 +1,4 @@
 
-
 # MoodKamu AI - Realtime Emotion Detector 🎭
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
@@ -64,27 +63,40 @@ cd MoodKamu-AI
 
 Backend bertugas memproses video dan menjalankan model AI. Kita akan menggunakan Port **8001**.
 
+**a. Masuk folder & Buat Virtual Environment**
+
 ```bash
-# 1. Masuk ke folder backend
 cd backend
-
-# 2. Buat Virtual Environment (Agar library tidak konflik dengan sistem)
-# Untuk Windows:
 python -m venv venv
-# Untuk Mac/Linux:
-# python3 -m venv venv
 
-# 3. Aktifkan Virtual Environment
-# Untuk Windows:
+```
+
+**b. Aktifkan Environment**
+
+* **Windows:**
+```bash
 .\venv\Scripts\activate
-# Untuk Mac/Linux:
-# source venv/bin/activate
 
-# 4. Install Library AI
-# (Proses ini mungkin memakan waktu karena mendownload DeepFace & TensorFlow)
+```
+
+
+* **Mac / Linux:**
+```bash
+source venv/bin/activate
+
+```
+
+
+
+**c. Install Library Python (WAJIB)**
+Jalankan perintah ini setelah environment aktif:
+
+```bash
 pip install fastapi uvicorn opencv-python numpy mediapipe deepface tf-keras
 
 ```
+
+*(Catatan: Proses ini butuh waktu beberapa menit karena mendownload model DeepFace & TensorFlow)*
 
 ### 3. Setup Frontend (Tampilan Web)
 
@@ -95,8 +107,7 @@ Buka **Terminal Baru** (jangan matikan terminal backend), lalu jalankan:
 # 1. Masuk ke folder frontend
 cd frontend
 
-# 2. Install Dependencies (WAJIB!)
-# Langkah ini akan mendownload semua modul Next.js ke folder node_modules
+# 2. Install Dependencies
 npm install
 
 ```
@@ -164,4 +175,3 @@ const socket = new WebSocket("ws://127.0.0.1:8001/ws");
 Tertarik mengembangkan proyek ini? Silakan fork repository ini dan buat Pull Request!
 
 Created by **Singgih Hakim**
-

@@ -1,4 +1,3 @@
-
 # MoodKamu AI - Realtime Emotion Detector 🎭
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
@@ -174,4 +173,8 @@ const socket = new WebSocket("ws://127.0.0.1:8001/ws");
 
 Tertarik mengembangkan proyek ini? Silakan fork repository ini dan buat Pull Request!
 
-Created by **Singgih Hakim**
+Created with ❤️ by **Singgih Hakim**
+
+```
+
+```

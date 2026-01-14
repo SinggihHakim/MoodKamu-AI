@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* --- 1. Konfigurasi Theme (Pengganti tailwind.config.js) --- */
+@theme {
+  /* Custom Colors */
+  --color-brand-dark: #1a1a1a;
+  --color-brand-accent: #3b82f6;
+
+  /* Custom Animations */
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* --- 2. Custom Variant untuk Dark Mode Manual --- */
+/* Ini memaksa style 'dark:' aktif jika ada class .dark di elemen HTML/Body */
+@variant dark (&:where(.dark, .dark *));
+
+/* --- 3. Global Styles --- */
+body {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-900);
+  /* Smooth transition untuk perubahan tema */
+  transition-property: color, background-color, border-color;
+  transition-duration: 300ms;
+}
+
+/* Style Body saat Dark Mode */
+.dark body {
+  background-color: var(--color-brand-dark);
+  color: var(--color-gray-100);
+}
+
+/* Utility Class Custom */
+.mood-card {
+  @apply bg-white rounded-xl shadow-lg p-6 transition-all duration-300;
+}
+
+.dark .mood-card {
+  @apply bg-gray-800 border border-gray-700;
+}

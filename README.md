@@ -163,8 +163,5 @@ const socket = new WebSocket("ws://127.0.0.1:8001/ws");
 
 Tertarik mengembangkan proyek ini? Silakan fork repository ini dan buat Pull Request!
 
-Created with ❤️ by **Singgih Hakim**
+Created by **Singgih Hakim**
 
-```
-
-```

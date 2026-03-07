@@ -7,6 +7,10 @@
 
 **MoodKamu** adalah aplikasi web interaktif berbasis *Artificial Intelligence* yang mendeteksi emosi, umur, dan gender pengguna secara *realtime* melalui webcam. Proyek ini menggabungkan performa **Next.js** di sisi pengguna dan kecerdasan **Python (Deep Learning)** di sisi server.
 
+
+---
+<img width="80%"  alt="image" src="https://github.com/user-attachments/assets/7c94188f-1450-4acd-be5e-a5615f7e2752" />
+
 ---
 
 ## 🚀 Fitur Utama

@@ -1,4 +1,4 @@
-# MoodKamu AI - Realtime Emotion Detector 🎭
+# MoodKamu AI - Realtime Emotion Detector
 
 ![Status](https://img.shields.io/badge/Status-Active-success)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
@@ -7,42 +7,45 @@
 
 **MoodKamu** adalah aplikasi web interaktif berbasis *Artificial Intelligence* yang mendeteksi emosi, umur, dan gender pengguna secara *realtime* melalui webcam. Proyek ini menggabungkan performa **Next.js** di sisi pengguna dan kecerdasan **Python (Deep Learning)** di sisi server.
 
-
----
-<img width="80%"  alt="image" src="https://github.com/user-attachments/assets/7c94188f-1450-4acd-be5e-a5615f7e2752" />
-
 ---
 
-## 🚀 Fitur Utama
-
-- **Deteksi Emosi Realtime**: Menganalisis ekspresi wajah (Senang, Sedih, Marah, Fokus, Lelah) dengan latensi rendah.
-- **Face Mesh Technology**: Melacak 468 titik wajah menggunakan MediaPipe untuk akurasi tinggi.
-- **Analisis Demografi**: Estimasi Umur dan Gender menggunakan DeepFace (TensorFlow).
-- **Adaptive Threshold**: Algoritma pintar yang menyesuaikan sensitivitas berdasarkan jarak dan bentuk wajah pengguna.
-- **Health Alerts**: Peringatan otomatis jika pengguna terdeteksi "Lelah" atau "Mengantuk".
+<img width="80%" alt="image" src="https://github.com/user-attachments/assets/7c94188f-1450-4acd-be5e-a5615f7e2752" />
 
 ---
 
-## 🛠️ Tech Stack
+## Fitur Utama
 
-### 🧠 Backend (AI Processing)
-- **Python 3.10+**
-- **FastAPI**: Framework server modern dan super cepat.
-- **Uvicorn**: ASGI Server.
-- **MediaPipe**: Ekstraksi landmark wajah yang ringan.
-- **DeepFace**: Library Deep Learning untuk analisis wajah lanjutan.
-- **OpenCV & NumPy**: Pemrosesan citra digital dan kalkulasi matriks.
-
-### 💻 Frontend (User Interface)
-- **Next.js**: React Framework untuk performa web yang optimal.
-- **WebSocket API**: Komunikasi data dua arah secara *realtime* antara client dan server.
-- **Tailwind / CSS Modules**: Styling antarmuka.
+* **Deteksi Emosi Realtime**: Menganalisis ekspresi wajah (Senang, Sedih, Marah, Fokus, Lelah) dengan latensi rendah.
+* **Face Mesh Technology**: Melacak 468 titik wajah menggunakan MediaPipe untuk akurasi tinggi.
+* **Analisis Demografi**: Estimasi Umur dan Gender menggunakan DeepFace (TensorFlow).
+* **Adaptive Threshold**: Algoritma pintar yang menyesuaikan sensitivitas berdasarkan jarak dan bentuk wajah pengguna.
+* **Health Alerts**: Peringatan otomatis jika pengguna terdeteksi "Lelah" atau "Mengantuk".
 
 ---
 
-## 📋 Prasyarat (Requirements)
+## Tech Stack
+
+### Backend (AI Processing)
+
+* **Python 3.10+**
+* **FastAPI**: Framework server modern dan super cepat.
+* **Uvicorn**: ASGI Server.
+* **MediaPipe**: Ekstraksi landmark wajah yang ringan.
+* **DeepFace**: Library Deep Learning untuk analisis wajah lanjutan.
+* **OpenCV & NumPy**: Pemrosesan citra digital dan kalkulasi matriks.
+
+### Frontend (User Interface)
+
+* **Next.js**: React Framework untuk performa web yang optimal.
+* **WebSocket API**: Komunikasi data dua arah secara *realtime* antara client dan server.
+* **Tailwind / CSS Modules**: Styling antarmuka.
+
+---
+
+## Prasyarat (Requirements)
 
 Sebelum memulai, pastikan komputer Anda sudah terinstall:
+
 1. **Git**: Untuk meng-clone repository.
 2. **Node.js** (v16 atau terbaru) & **npm**: Untuk menjalankan frontend.
 3. **Python** (v3.9 atau terbaru): Untuk menjalankan backend.
@@ -50,16 +53,17 @@ Sebelum memulai, pastikan komputer Anda sudah terinstall:
 
 ---
 
-## ⚙️ Cara Install (Step-by-Step)
+## Cara Install (Step-by-Step)
 
 Ikuti langkah-langkah ini untuk menjalankan proyek di komputer lokal Anda.
 
 ### 1. Clone Repository
-Buka terminal dan download source code proyek ini.
-```bash
-git clone [https://github.com/SinggihHakim/MoodKamu-AI.git](https://github.com/SinggihHakim/MoodKamu-AI.git)
-cd MoodKamu-AI
 
+Buka terminal dan download source code proyek ini.
+
+```bash
+git clone https://github.com/SinggihHakim/MoodKamu-AI.git
+cd MoodKamu-AI
 ```
 
 ### 2. Setup Backend (Server AI)
@@ -71,32 +75,28 @@ Backend bertugas memproses video dan menjalankan model AI. Kita akan menggunakan
 ```bash
 cd backend
 python -m venv venv
-
 ```
 
 **b. Aktifkan Environment**
 
-* **Windows:**
+**Windows:**
+
 ```bash
 .\venv\Scripts\activate
-
 ```
 
+**Mac / Linux:**
 
-* **Mac / Linux:**
 ```bash
 source venv/bin/activate
-
 ```
 
-
-
 **c. Install Library Python (WAJIB)**
+
 Jalankan perintah ini setelah environment aktif:
 
 ```bash
 pip install fastapi uvicorn opencv-python numpy mediapipe deepface tf-keras
-
 ```
 
 *(Catatan: Proses ini butuh waktu beberapa menit karena mendownload model DeepFace & TensorFlow)*
@@ -104,6 +104,7 @@ pip install fastapi uvicorn opencv-python numpy mediapipe deepface tf-keras
 ### 3. Setup Frontend (Tampilan Web)
 
 Frontend bertugas menampilkan kamera dan hasil analisis. Kita akan menggunakan Port **3000**.
+
 Buka **Terminal Baru** (jangan matikan terminal backend), lalu jalankan:
 
 ```bash
@@ -112,12 +113,11 @@ cd frontend
 
 # 2. Install Dependencies
 npm install
-
 ```
 
 ---
 
-## 🏃‍♂️ Cara Menjalankan Aplikasi
+## Cara Menjalankan Aplikasi
 
 Pastikan Anda membuka **2 Terminal** secara bersamaan saat menjalankan aplikasi.
 
@@ -127,10 +127,9 @@ Pastikan Anda berada di folder `backend` dan virtual environment (`venv`) sudah 
 
 ```bash
 uvicorn main:app --reload --host 0.0.0.0 --port 8001
-
 ```
 
-*Tunggu hingga muncul pesan: `Uvicorn running on http://0.0.0.0:8001*`
+*Tunggu hingga muncul pesan: `Uvicorn running on http://0.0.0.0:8001`*
 
 ### Terminal 2: Jalankan Frontend
 
@@ -138,10 +137,9 @@ Pastikan Anda berada di folder `frontend`.
 
 ```bash
 npm run dev
-
 ```
 
-### Akses di Browser 🌐
+### Akses di Browser
 
 1. Buka browser (Chrome/Edge disarankan).
 2. Kunjungi alamat: **http://localhost:3000**
@@ -149,17 +147,16 @@ npm run dev
 
 ---
 
-## ⚠️ Troubleshooting (Masalah Umum)
+## Troubleshooting (Masalah Umum)
 
 **Q: Kamera tidak muncul atau status "Menunggu koneksi..." terus?**
 
 * **Cek Port Backend:** Pastikan Backend berjalan di port `8001`, bukan `8000`.
 * **Cek WebSocket:** Pastikan file `frontend/pages/index.js` mengarah ke IP `127.0.0.1`.
+
 ```javascript
 const socket = new WebSocket("ws://127.0.0.1:8001/ws");
-
 ```
-
 
 *(Hindari penggunaan `localhost` di URL WebSocket pada Windows untuk mencegah delay IPv6).*
 
@@ -173,9 +170,8 @@ const socket = new WebSocket("ws://127.0.0.1:8001/ws");
 
 ---
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Tertarik mengembangkan proyek ini? Silakan fork repository ini dan buat Pull Request!
 
-Created  by **Singgih Hakim**
-
+Created by **Singgih Hakim**
